@@ -12,7 +12,8 @@ import SwiftData
 struct SwiftDataPredicatePainApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            Note.self,
+            CoffeeBag.self
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
